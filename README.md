@@ -8,5 +8,5 @@ Player 2: O
 
 
 # Play the game
-<a href="https://hrutujamirgal.github.io/Tic-Tac-Toe-Game">CLick here to play Game </a>
+<a href="https://hrutujamirgal.github.io/Tic-Tac-Toe-Game"><button>Click here to play Game </button></a>
 
