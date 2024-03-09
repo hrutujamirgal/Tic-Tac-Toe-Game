@@ -1,0 +1,152 @@
+body{
+    margin:0%;
+    background-color: black;
+}
+
+.game{
+    margin: 0%;
+}
+
+@keyframes colorChange {
+    0% { color: #0000ff; } 
+    50% { color: #ff0077; } 
+    100% { color: #a200ff; } 
+}
+
+@keyframes change {
+    0% { color: #4141ec; }
+    50% { color: #7935e7; }
+    100% { color: #cc2bec; }
+}
+
+
+.game h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 69px;
+    text-align: center;
+    animation: colorChange 0.5s infinite;
+}
+
+
+.game .participants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game .participants p {
+    color: rgb(255, 255, 255) ; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 28px;
+    animation: change 5s infinite;
+}
+
+
+.game .grid {
+    width: 40%;
+    margin-left: 30%;
+    padding: 2vh;
+    background: rgb(51,8,88);
+    background: linear-gradient(90deg, rgba(51,8,88,1) 0%, rgba(116,47,153,1) 35%, rgba(16,2,107,1) 64%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3vh; 
+}
+
+.grid button {
+    width: 100%;
+    height: 60px;
+    font-size: 56px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 0;
+}
+
+
+.participants p.turn{
+    border: 1px solid white;
+    background-color: white;
+    font-weight: bold;   
+}
+
+.result{
+    background-color: black;
+    width: 200px;
+    margin-left: 45%;
+    font-size: 32px;
+    align-items: center;
+    color: white;
+    animation: change 0.2s infinite;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .result{
+        width: 140px;
+        margin-left: 10%;
+        font-size: 36px;
+    }
+
+    .game .grid {
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 20%;
+        padding: 1vh;
+        grid-gap: 2vh; 
+    }
+
+
+    .grid button {
+        width: 100%;
+        height: 60px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+
+    
+}
+
+@media screen and (max-width: 560px){
+    .result{
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 280px){
+    .result{
+        margin-left: 18%;
+        font-size: 28px;
+    }
+
+    .game .participants p {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .game h1{
+        font-size: 50px;
+    }
+
+    .game .grid {
+        width: 60%;
+        margin-top: 10%;
+        margin-left: 15%;
+        padding: 1vh;
+        grid-gap: 1vh; 
+    }
+
+
+    .grid button {
+        width: 100%;
+        height: 60px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+}
