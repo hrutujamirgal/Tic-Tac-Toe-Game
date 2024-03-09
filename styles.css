@@ -3,6 +3,30 @@ body{
     background-color: black;
 }
 
+.game h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+    text-align: center;
+    animation: change 1s infinite;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex button{
+    width: 40%;
+    height: 60px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background: rgb(51,8,88);
+background: linear-gradient(90deg, rgba(51,8,88,1) 0%, rgba(116,47,153,1) 26%, rgba(16,2,107,1) 51%, rgba(0,212,255,1) 100%);
+    margin: 9%;
+}
+
 .game{
     margin: 0%;
 }
