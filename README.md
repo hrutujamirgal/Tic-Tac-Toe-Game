@@ -1,5 +1,5 @@
 # Tic Tac Toe game
- Tic tac Toe Two player game
+ Tic Tac Toe Two player game
 
 
 # The simple 2 player game
